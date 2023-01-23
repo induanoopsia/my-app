@@ -50,7 +50,6 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.3.2</version>
         </plugin>
-        ...
       </plugins>
     </pluginManagement>
     <!-- To use the plugin goals in your POM or parent POM -->
@@ -60,7 +59,6 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.2</version>
       </plugin>
-      ...
     </plugins>
   </build>
 </project>
