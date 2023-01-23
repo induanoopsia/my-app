@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 
 public class CalculatorTest extends TestCase {
 	Calculator cal = new Calculator();
-/*
+
 	public void testAdd() {
 		Properties prop = new Properties();
 		
@@ -54,5 +54,5 @@ public class CalculatorTest extends TestCase {
 	public void testAddNew() {
 		Assert.assertEquals(cal.add(10, 20), 30);
 	}
-	*/
+	
 }
