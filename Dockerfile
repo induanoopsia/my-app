@@ -1,4 +1,4 @@
-FROM tomcat:9
+FROM tomcat:8.5.85-jdk8
 
 LABEL maintainer="Indu Anoop"
 
