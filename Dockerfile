@@ -1,6 +1,7 @@
 FROM tomcat:8
 LABEL maintainer="Indu Anoop"
 COPY target/*.war /usr/local/tomcat/webapps/myweb.war
-COPY -R usr/local/tomcat/webapps.dist usr/local/tomcat/webapps/
+RUN cd webapps.dist
+RUN cp -R * ../webapps/
 EXPOSE 8080
 CMD ["catalina.sh","run"]
