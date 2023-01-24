@@ -1,8 +1,5 @@
-FROM tomcat:9.0.27-jdk8-openjdk
-USER root
-VOLUME /tmp
-RUN chmod -R 777 $CATALINA_HOME/webapps 
-ENV CATALINA_HOME /usr/local/tomcat
-COPY target/*.war $CATALINA_HOME/webapps/myapp.war
+FROM tomcat:8
+LABEL maintainer="Indu Anoop"
+COPY target/*.war /usr/local/tomcat/webapps/myweb.war
 EXPOSE 8080
 CMD ["catalina.sh","run"]
