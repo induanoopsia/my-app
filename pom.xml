@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<name>my-app</name>
 	<url>http://maven.apache.org</url>
-
+	<version>0.0.1</version>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
