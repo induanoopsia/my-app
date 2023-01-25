@@ -8,6 +8,6 @@ ENV APACHE_LOG_DIR /var/log/apache2
 COPY target/*.war /usr/local/tomcat/webapps/myweb.war
 EXPOSE 80
 WORKDIR /usr/local/tomcat/webapps.dist/
-CMD ["cp", "-R", "../webapps/"]
+CMD ["cp", "-R *", "../webapps/"]
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
