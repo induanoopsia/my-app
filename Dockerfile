@@ -1,7 +1,8 @@
-FROM tomcat:8
-LABEL app=my-app
+FROM tomcat:8.5.16-jre8-alpine
+MAINTAINER INDU ANOOP
+EXPOSE 8080
 RUN rm -rf /usr/local/tomcat/webapps/*
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
-WORKDIR /usr/local/tomcat/webapps.dist
-CMD cp -R * ../webapps/
+COPY ./target/myweb-0.0.1.war /usr/local/tomcat/webapps/ROOT.war
+CMD ["catalina.sh","run"]
+
 
