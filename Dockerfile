@@ -2,8 +2,8 @@ FROM tomcat:latest
 EXPOSE 8080
 RUN rm -frv /usr/local/tomcat/webapps/*
 WORKDIR /usr/local/tomcat/webapp.dist
-RUN cp -R * ../webapps/
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+COPY usr/local/tomcat/webapp.dist/* -R * /usr/local/tomcat/webapps/
+ADD target/*.war /usr/local/tomcat/webapps/myweb.war
 CMD ["catalina.sh", "run"]
 
 
