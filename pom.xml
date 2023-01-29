@@ -4,7 +4,7 @@
 	<groupId>in.javahome</groupId>
 	<artifactId>myindu</artifactId>
 	<packaging>war</packaging>
-	<name>my-app</name>
+	<name>myindu</name>
 	<url>http://maven.apache.org</url>
 	<version>0.0.1</version>
 	<dependencies>
