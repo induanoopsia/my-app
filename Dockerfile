@@ -1,7 +1,6 @@
 FROM tomcat:latest
-WORKDIR usr/local/tomcat/webapp.dist/
-RUN cp -R * ../webapps/
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+EXPOSE 8080
+ADD ./target/myweb-0.0.1.war /usr/local/tomcat/webapps/
 CMD ["catalina.sh", "run"]
 
 
