@@ -1,3 +1,5 @@
 FROM tomcat:8
-COPY target/*.war /usr/local/tomcat/webapps/myindu.war
+ADD ./target/myweb-0.0.1.war /usr/local/tomcat/webapps/
 CMD ["catalina.sh", "run"]
+
+
