@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>in.javahome</groupId>
-	<artifactId>myindu</artifactId>
+	<artifactId>myapp</artifactId>
 	<packaging>war</packaging>
-	<name>myindu</name>
+	<name>myapp</name>
 	<url>http://maven.apache.org</url>
-	<version>0.0.3</version>
+	<version>0.0.1</version>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
